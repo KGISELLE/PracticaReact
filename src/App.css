@@ -1,3 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-color: #61dafb;
+  color: whitesmoke;
+  text-align: center;
+  min-width: none;
+  margin: 0;
+}
+
+#text-title {
+  background: black;
+  padding: 10px;
+}
+
+.menu-wrap{
+  background-color: darkgray;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  margin: 25px 0px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+li {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 10px;
+  min-width: 150px;
+  display: inline;
+  border-radius: 10px;
+  border: 1px whitesmoke solid;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.logo-wrap{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.logo-img{
+  background-color: darkgray;
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  display: flex;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-wrap {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  /* height: 55vh; */
+  width: 25vw;
+  background-color: darkgrey;
+  margin: 15px 0px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-wrap{
+  width: 100%;
+  height: 25vh;
+}
+
+.img-wrap img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.card h2{
+  color: #212121;
+  margin: 1rem 0;
+}
+
+.card p{
+  color: #212121;
+  text-align: justify;
+  padding: 0px 25px 30px 25px;
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+  /* overflow: scroll; */
+}
+
+@media(max-width: 910px) {
+  ul{
+    flex-flow: column nowrap;
+  }
+}
+
+@media(max-width: 800px) {
+  .card-wrap{
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .card{
+    width: 80vw;
+    margin: 50px 0px;
+  }
+}
+
+
+
+/* --------------------------- */
+
+
 .App {
   text-align: center;
 }
